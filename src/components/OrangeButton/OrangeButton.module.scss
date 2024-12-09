@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.pushable {
+    background: #b76420;
+    border-radius: 50px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.front {
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+    border-radius: 50px;
+    font-size: 2em;
+    background: #FF7200;
+    color: white;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    transition: transform 0.1s ease-in-out;
+    border: 3px solid #e99546;
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    width: 0.75em;
+    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.2));
+}

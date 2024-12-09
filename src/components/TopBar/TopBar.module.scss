@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-left: 4vw;
+}
+
+.diggyCoin {
+    margin-right: 10px;
+}
+
+.orangeText {
+    color: #e57d2a;
+    font-size: 1.75em;
+    margin-left: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+    letter-spacing: -2px;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-right: 4vw;
+}
+
+.iconButton {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.3s, border-color 0.3s;
+
+    &:hover {
+        background-color: rgba(255, 165, 0, 0.2);
+        border-color: orange;
+    }
+
+    .iconImage {
+        width: 20px;
+        height: 20px;
+    }
+}
