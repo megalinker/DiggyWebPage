@@ -7,11 +7,9 @@ import DiggyStatsText from './components/DiggyStatsText/DiggyStatsText';
 import OrangeButton from './components/OrangeButton/OrangeButton';
 import TopBar from './components/TopBar/TopBar';
 import DiggyPlay from '/assets/DiggyPlay.svg';
-import { useMediaQuery } from 'react-responsive';
+import DiggyMiners from '/assets/DiggyMiners.webp';
 
 function App() {
-
-  const isSmallScreen = useMediaQuery({ query: '(max-width: 1100px)' });
 
   const handleMineNowClick = () => {
     window.open('https://hpalt-7yaaa-aaaal-amr3a-cai.raw.icp0.io/', '_blank');
@@ -35,7 +33,7 @@ function App() {
           <DiggyCoin />
           <DiggyCoin size={75} />
         </div>
-        <h1>THE 1ST POW GAMING TOKEN ON ICP</h1>
+        <h1 className={styles.Title}>THE 1ST POW GAMING TOKEN ON ICP</h1>
         <p className={styles.SubText}>
           For a limited time, you can create miners and extract $DIGGY
         </p>
@@ -53,6 +51,13 @@ function App() {
             onClick={handleBuyDiggyClick}
           />
         </div>
+
+        <img
+          src={DiggyMiners}
+          alt="DiggyMiners"
+          className={styles.BottomImage}
+        />
+
       </div>
       <div className={styles.DiggyBody}>
         <DiggyStats />
