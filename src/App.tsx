@@ -8,6 +8,9 @@ import OrangeButton from './components/OrangeButton/OrangeButton';
 import TopBar from './components/TopBar/TopBar';
 import DiggyPlay from '/assets/DiggyPlay.svg';
 import DiggyMiners from '/assets/DiggyMiners.webp';
+import DiggyCoinImage from '/assets/DiggyCoin.webp';
+import BlueSvg from '/assets/BlueSvg.svg';
+import { RiveDemo } from './components/MiningAnimationComponent/InteractiveRive';
 
 function App() {
 
@@ -33,7 +36,7 @@ function App() {
           <DiggyCoin />
           <DiggyCoin size={75} />
         </div>
-        <h1 className={styles.Title}>THE 1ST POW GAMING TOKEN ON ICP</h1>
+        <h1 className={styles.Title}>THE 1ST PoW GAMING TOKEN ON ICP</h1>
         <p className={styles.SubText}>
           For a limited time, you can create miners and extract $DIGGY
         </p>
@@ -60,15 +63,22 @@ function App() {
 
       </div>
       <div className={styles.DiggyBody}>
+
+        <img src={BlueSvg} className={styles.BlueSvg} />
+        <img src={DiggyCoinImage} className={styles.DiggyCoin} />
+
         <DiggyStats />
         <div className={styles.DiggySection}>
-          <DiggyAboutText />
+          <div className={styles.leftAbout}>
+            <DiggyAboutText />
+            <OrangeButton
+              text="BUY $DIGGY"
+              onClick={handleBuyDiggyClick}
+            />
+          </div>
           <DiggyCoin size={"25vw"} />
         </div>
         <div className={styles.DiggySection}>
-          <div className={styles.DiggyMining}>
-            <DiggyCoin size={"25vw"} />
-          </div>
           <div className={styles.DiggyTroopStatsContent}>
             <DiggyStatsText />
             <div className={styles.SecondButtonRow}>
@@ -84,7 +94,9 @@ function App() {
             </div>
           </div>
         </div>
-
+        <div className={styles.DiggyMiningAnim}>
+          <RiveDemo />
+        </div>
       </div>
     </div>
   );

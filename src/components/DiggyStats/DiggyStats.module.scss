@@ -7,6 +7,12 @@
     background-color: rgba(255, 255, 255, 0.4);
     width: 85vw;
     text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    box-shadow: 0px 6px 8px rgba(13, 71, 161, 0.15);
+}
+
+.iconImage {
+    width: 1.5vw;
 }
 
 .DiggyStatsColumn {

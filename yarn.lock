@@ -1040,6 +1040,18 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@rive-app/canvas@2.25.1":
+  version "2.25.1"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-2.25.1.tgz#9b18a16c6d037e8e5234627433497410518886f3"
+  integrity sha512-d0vpj8+hiyzTbwUCPIB6Nw5erNaeYveVi71BMnoatSGls6NbWeUjTif1KuWuyn4DIYouU/9q7GQMwDFm0rGbjg==
+
+"@rive-app/react-canvas@^4.17.3":
+  version "4.17.3"
+  resolved "https://registry.yarnpkg.com/@rive-app/react-canvas/-/react-canvas-4.17.3.tgz#6ec69a4cecdade0f571bc37661a9a74cdea64742"
+  integrity sha512-n32zFCOJLiVBqesQU5MIOWg5wxmVsY/pdRd7p9fllrIb9JFYePIc+3socIOBcIK84+RildBUoVBkSXniksnk0g==
+  dependencies:
+    "@rive-app/canvas" "2.25.1"
+
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.27.8.tgz#6667fac16c436b5434a387a34dedb013198f6e6e"
@@ -1275,6 +1287,11 @@
   integrity sha512-FSYhIjFlfOpGSRyVoMBMuS3ws5ehFQODymf3vlI7U1K8c7PHwWwFY7VREfmsuzHSOnoKs/9/Y983ayOs7eRzqw==
   dependencies:
     "@types/jest" "*"
+
+"@types/tinycolor2@^1.4.6":
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/@types/tinycolor2/-/tinycolor2-1.4.6.tgz#670cbc0caf4e58dd61d1e3a6f26386e473087f06"
+  integrity sha512-iEN8J0BoMnsWBqjVbWH/c0G0Hh7O21lpR2/+PrvAVgWdzL7eexIFm4JN/Wn10PTcmNdtS6U67r499mlWMXOxNw==
 
 "@types/unist@*", "@types/unist@^3.0.0":
   version "3.0.3"

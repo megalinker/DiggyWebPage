@@ -11,7 +11,7 @@ const DiggyCounter: React.FC = () => {
 
     useEffect(() => {
         const calculateTimeLeft = () => {
-            const targetDate = new Date('December 25, 2024 00:00:00').getTime();
+            const targetDate = new Date('2025-01-29T19:15:00+05:30').getTime();
             const now = new Date().getTime();
             const difference = targetDate - now;
 
@@ -36,6 +36,8 @@ const DiggyCounter: React.FC = () => {
                 });
             }
         };
+
+        calculateTimeLeft();
 
         const timer = setInterval(calculateTimeLeft, 1000);
 

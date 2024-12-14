@@ -13,6 +13,8 @@
   justify-content: center;
   align-items: center;
   background: radial-gradient(circle, #0913FB, #0210B5);
+  position: relative;
+  z-index: 1;
 }
 
 .MainDiv::before {
@@ -40,7 +42,7 @@
 }
 
 .Title {
-  width: 34vw;
+  width: 41vw;
   min-width: 300px;
 }
 
@@ -88,7 +90,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .DiggySection {
@@ -103,7 +107,7 @@ p {
   display: flex;
   flex-direction: row;
   gap: 1vw;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -122,4 +126,31 @@ p {
   .DiggyTroopStatsContent {
     order: 1
   }
+}
+
+.BlueSvg {
+  position: absolute;
+  width: 100%;
+  top: -40vw;
+}
+
+.leftAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.DiggyCoin {
+  position: absolute;
+  opacity: 0.1;
+  top: -2vw;
+  width: 38vw;
+  height: 38vw;
+}
+
+.DiggyMiningAnim {
+  height: 52.5vw;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }

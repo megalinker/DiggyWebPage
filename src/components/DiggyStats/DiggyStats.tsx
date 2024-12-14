@@ -2,6 +2,7 @@ import React from 'react';
 import DiggyCoin from '../DiggyCoin/DiggyCoin';
 import styles from './DiggyStats.module.scss';
 import { useMediaQuery } from 'react-responsive';
+import ICPToken from '/assets/ICPToken.svg';
 
 const DiggyStats: React.FC = () => {
 
@@ -14,8 +15,8 @@ const DiggyStats: React.FC = () => {
                 <div className={styles.DiggyStatsIcons}>
                     {!isSmallScreen && (
                         <>
-                            <DiggyCoin size={33} />
-                            <DiggyCoin size={33} />
+                            <DiggyCoin size={"1.5vw"} />
+                            <img src={ICPToken} alt="ICP" className={styles.iconImage} />
                         </>
                     )}
                     <p className={styles.ContentColumn}>DIGGY / ICP</p>

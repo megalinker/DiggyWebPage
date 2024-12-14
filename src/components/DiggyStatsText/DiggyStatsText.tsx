@@ -1,9 +1,32 @@
 import styles from './DiggyStatsText.module.scss';
+import CopyIcon from '/assets/copy_icon.svg';
+import ICPSwap from '/assets/IcpSwapIcon.webp';
+import DEXIcon from '/assets/DexScreenerIcon.webp';
 
 const DiggyStatsText = () => {
     return (
         <div className={styles.DiggyStatsText}>
             <h1>DIGGYTROOP STATS</h1>
+
+            <div className={styles.DiggyTroopStatsH}>
+                <div className={styles.DiggyCanisterId}>
+                    <div className={styles.DiggyTitleStat }>
+                        CANISTER ID:
+                    </div>
+                    <p className={`${styles.ContentColumn} ${styles.Canister}`}>dfg2l-2yaaa-aaaap-akpsa-cai</p>
+                    <img src={CopyIcon} className={styles.copyIcon} />
+                </div>
+                <div className={styles.DiggyCanisterId}>
+                    <div className={styles.DiggyPage}>
+                        <img src={ICPSwap} className={styles.pageIcon} />
+                        <p className={styles.ContentColumn}>ICPSwap</p>
+                    </div>
+                    <div className={styles.DiggyPage}>
+                        <img src={DEXIcon} className={styles.pageIcon} />
+                        <p className={styles.ContentColumn}>DEX Screener</p>
+                    </div>
+                </div>
+            </div>
             <div className={styles.DiggyTroopStats}>
                 <div className={styles.DiggyTroopStatsColumn}>
                     <p className={styles.TitleColumn}>User Count</p>
