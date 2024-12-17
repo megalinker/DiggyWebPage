@@ -32,10 +32,5 @@ export default defineConfig({
     environment('all', { prefix: 'CANISTER_' }),
     environment('all', { prefix: 'DFX_' }),
   ],
-  assetsInclude: ['**/*.lottie'],
-  test: {
-    environment: 'jsdom',
-    setupFiles: 'setupTests.ts',
-    cache: { dir: '../node_modules/.vitest' },
-  },
+  assetsInclude: ['**/*.riv'],
 });

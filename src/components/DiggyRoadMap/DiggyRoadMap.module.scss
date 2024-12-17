@@ -1,0 +1,44 @@
+.DiggyRoadMap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: -100px;
+
+    h1 {
+        color: black;
+        margin-top: 0;
+    }
+}
+
+.RoadMapText {
+    color: black;
+    font-family: "Manrope", sans-serif;
+    width: auto;
+    font-size: 1.25em;
+    text-align: center;
+    transform: translateY(-22.5vw);
+    max-width: 90vw;
+    margin-bottom: 10px;
+}
+
+.DiggyFeo {
+    width: 100%;
+    transform: translateY(-4vw);
+}
+
+.RoadButton {
+    transform: translateY(-16vw);
+}
+
+@media screen and (max-width: 700px) {
+    .RoadMapText {
+        font-size: 1em;
+
+    }
+
+    .DiggyRoadMap {
+        margin-bottom: -20px;
+    }
+}

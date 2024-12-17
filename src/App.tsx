@@ -10,20 +10,14 @@ import DiggyPlay from '/assets/DiggyPlay.svg';
 import DiggyMiners from '/assets/DiggyMiners.webp';
 import DiggyCoinImage from '/assets/DiggyCoin.webp';
 import BlueSvg from '/assets/BlueSvg.svg';
-import { RiveDemo } from './components/MiningAnimationComponent/InteractiveRive';
+import { Rive } from './components/MiningAnimationComponent/MiningRiveAnimation/MiningRiveAnimation';
+import { goICPSwap, goMiningPage } from './utils/clickUtils';
+import Footer from './components/Footer/Footer';
+import DiggyRoadMap from './components/DiggyRoadMap/DiggyRoadMap';
+import DiggyHalving from './components/DiggHalving/DiggyHalving';
+import DiggyMining from './components/MiningAnimationComponent/MiningComponent';
 
 function App() {
-
-  const handleMineNowClick = () => {
-    window.open('https://hpalt-7yaaa-aaaal-amr3a-cai.raw.icp0.io/', '_blank');
-  };
-
-  const handleBuyDiggyClick = () => {
-    window.open(
-      'https://app.icpswap.com/swap/pro?input=ryjl3-tyaaa-aaaaa-aaaba-cai&output=dfg2l-2yaaa-aaaap-akpsa-cai',
-      '_blank'
-    );
-  };
 
   return (
     <div className={styles.App}>
@@ -47,17 +41,16 @@ function App() {
           <OrangeButton
             text="MINE NOW"
             icon={DiggyPlay}
-            onClick={handleMineNowClick}
+            onClick={goMiningPage}
           />
           <OrangeButton
             text="BUY $DIGGY"
-            onClick={handleBuyDiggyClick}
+            onClick={goICPSwap}
           />
         </div>
 
         <img
           src={DiggyMiners}
-          alt="DiggyMiners"
           className={styles.BottomImage}
         />
 
@@ -73,7 +66,7 @@ function App() {
             <DiggyAboutText />
             <OrangeButton
               text="BUY $DIGGY"
-              onClick={handleBuyDiggyClick}
+              onClick={goICPSwap}
             />
           </div>
           <DiggyCoin size={"25vw"} />
@@ -85,19 +78,21 @@ function App() {
               <OrangeButton
                 text="MINE NOW"
                 icon={DiggyPlay}
-                onClick={handleMineNowClick}
+                onClick={goMiningPage}
               />
               <OrangeButton
                 text="BUY $DIGGY"
-                onClick={handleBuyDiggyClick}
+                onClick={goICPSwap}
               />
             </div>
           </div>
         </div>
-        <div className={styles.DiggyMiningAnim}>
-          <RiveDemo />
-        </div>
+          <DiggyMining />
+
+        <DiggyHalving />
+        <DiggyRoadMap />
       </div>
+      <Footer />
     </div>
   );
 }

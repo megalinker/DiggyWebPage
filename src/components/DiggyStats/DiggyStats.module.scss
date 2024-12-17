@@ -6,7 +6,7 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.4);
     width: 85vw;
-    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
     z-index: 1;
     box-shadow: 0px 6px 8px rgba(13, 71, 161, 0.15);
 }
@@ -50,6 +50,16 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+    .TitleColumn {
+        color: black;
+    }
+
+    .ContentColumn {
+        color: black;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .ContentColumn {
         font-size: 1em;
@@ -60,17 +70,35 @@
     }
 
     .DiggyStatsColumn {
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 }
 
 @media screen and (max-width: 700px) {
     .ContentColumn {
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
 
     .TitleColumn {
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
+}
+
+.positive24 {
+    background-color: #0f03;
+    color: black;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.negative24 {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: black;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid red;
 }

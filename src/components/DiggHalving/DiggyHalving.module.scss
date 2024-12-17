@@ -1,32 +1,52 @@
-.DiggyAboutText {
+.DiggyHalving {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.AboutText {
     display: flex;
     flex-direction: column;
     text-align: start;
     margin-bottom: 50px;
-
-    h1 {
-        color: black;
-    }
-}
-
-.AboutText {
     font-family: "Manrope", sans-serif;
     min-width: 300px;
     width: 40vw;
     font-size: clamp(19px, 1.4vw, 104px);
     line-height: 1.25;
     color: black;
+
+    h1 {
+        color: black;
+    }
+
+}
+
+.Animation {
+    width: 50%;
 }
 
 @media screen and (max-width: 700px) {
-    .DiggyAboutText {
+    .DiggyHalving {
+        flex-direction: column;
         text-align: center;
         margin-bottom: 33px;
         align-items: center;
     }
 
+    .AboutContainer {
+        order: 1;
+    }
+
+    .Animation {
+        width: 75vw;
+        order: 2;
+    }
+
     .AboutText {
-        width: 100%;
+        width: 75vw;
         text-align: justify;
         text-align-last: center;
     }

@@ -2,7 +2,6 @@
 
 .App {
   text-align: center;
-
 }
 
 .MainDiv {
@@ -28,7 +27,7 @@
   background-size: cover;
   background-position: center;
   opacity: 0.3;
-  filter: blur(30px);
+  filter: blur(5px);
   z-index: 0;
 }
 
@@ -100,6 +99,8 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 75vw;
+  justify-content: space-between;
 }
 
 .SecondButtonRow {
@@ -108,7 +109,23 @@ p {
   flex-direction: row;
   gap: 1vw;
   justify-content: center;
+  user-select: none;
+  align-items: center
 }
+
+.leftAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 900px) {
+  .MainButtons {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 
 @media screen and (max-width: 700px) {
   .DiggySection {
@@ -116,7 +133,10 @@ p {
   }
 
   .SecondButtonRow {
+    margin-top: 33px;
     justify-content: center;
+    flex-direction: column;
+    gap: 25px;
   }
 
   .DiggyMining {
@@ -126,6 +146,11 @@ p {
   .DiggyTroopStatsContent {
     order: 1
   }
+
+  .leftAbout {
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .BlueSvg {
@@ -134,11 +159,6 @@ p {
   top: -40vw;
 }
 
-.leftAbout {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
 .DiggyCoin {
   position: absolute;
@@ -153,4 +173,5 @@ p {
   width: 100vw;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }

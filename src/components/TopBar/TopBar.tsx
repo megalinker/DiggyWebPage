@@ -3,6 +3,7 @@ import styles from './TopBar.module.scss';
 import DiggyCoin from '../DiggyCoin/DiggyCoin';
 import DiscordIcon from '/assets/DiscordIcon.svg';
 import XIcon from '/assets/X_icon.svg';
+import SocialIcons from '../SocialIcons/SocialIcons';
 
 const TopBar: React.FC = () => {
 
@@ -25,20 +26,7 @@ const TopBar: React.FC = () => {
 
             {/* Right Section */}
             <div className={styles.rightSection}>
-                <button
-                    className={styles.iconButton}
-                    onClick={() => handleDiscordClick()}
-                    aria-label="Discord"
-                >
-                    <img src={DiscordIcon} alt="Discord" className={styles.iconImage} />
-                </button>
-                <button
-                    className={styles.iconButton}
-                    onClick={() => handleXClick()}
-                    aria-label="X"
-                >
-                    <img src={XIcon} alt="X" className={styles.iconImage} />
-                </button>
+                <SocialIcons />
             </div>
         </header>
     );

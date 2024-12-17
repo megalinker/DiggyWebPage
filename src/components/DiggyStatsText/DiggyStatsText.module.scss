@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manrope:wght@200..800&display=swap');
 
+.DiggyTroopStatsContent {
+    width: 100%;
+}
+
 .DiggyStatsText {
     display: flex;
     flex-direction: column;
@@ -27,19 +31,34 @@
     justify-content: space-between
 }
 
-.DiggyTroopStats {
+.DiggyTroopStatsL {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     border-radius: 20px;
     border: 2px solid #8489FD;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 75vw;
     text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
     min-height: 75px;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    width: 66%;
+}
+
+.DiggyTroopStatsR {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 2px solid #8489FD;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+    min-height: 75px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 32%;
 }
 
 .DiggyTroopStatsColumn {
@@ -47,10 +66,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 0;
     align-items: flex-start;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 1vw;
+
 }
 
 .TitleColumn {
@@ -69,29 +87,34 @@
     margin-top: 10px;
     text-align: left;
     margin-bottom: 10px;
+    white-space: nowrap;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.Canister{
-    font-weight:normal;
+.ContentColumn:hover {
+    color: #8489FD;
+    transform: scale(1.05);
 }
 
-@media screen and (max-width: 700px) {
-    .DiggyStatsText {
-        text-align: center;
-        margin-bottom: 33px;
-        align-items: center;
-    }
-
-    .DiggyTroopStats {
-        width: 90vw;
-    }
+.Canister {
+    font-weight: normal;
 }
+
 
 .DiggyTitleStat {
     font-family: "Fredoka", sans-serif;
     font-weight: bold;
     font-size: 28px;
     margin-left: 2vw;
+    color: white;
+}
+
+.DiggyTitleColumn {
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .DiggyCanisterId {
@@ -105,13 +128,110 @@
 .DiggyPage {
     display: flex;
     flex-direction: row;
+    align-items: center;
     border: 2px solid #8489FD;
     margin-left: 15px;
     border-radius: 35px;
     padding: 8px 15px;
+    user-select: none;
+    cursor: pointer;
 }
 
 .pageIcon {
-    width: 33px;
+    width: 42px;
     margin-right: 10px;
+}
+
+.DiggyStatsRow {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    gap: 2%;
+    align-items: center;
+}
+
+@media screen and (max-width: 1350px) {
+
+    .copyIcon {
+        width: 20px;
+    }
+
+    .DiggyTroopStatsH {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .DiggyPage {
+        margin-top: 10px;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+        padding-left: max(0.75vw, 8px);
+        padding-right: max(0.75vw, 8px);
+    }
+
+    .pageIcon {
+        width: 33px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .DiggyCanisterId {
+        gap: 5px;
+    }
+
+    .DiggyTitleStat {
+        font-size: 15px;
+    }
+
+    .DiggyTroopStatsH {
+        width: 85vw;
+    }
+
+    .DiggyStatsText {
+        text-align: center;
+        margin-bottom: 33px;
+        align-items: center;
+    }
+
+    .DiggyTroopStats {
+        width: 85vw;
+    }
+
+    .TitleColumn {
+        font-size: 0.75em;
+    }
+
+    .ContentColumn {
+        font-size: 11px;
+    }
+
+    .DiggyStatsRow {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .DiggyTroopStatsL {
+        width: 85vw;
+        padding: 15px;
+    }
+
+    .DiggyTroopStatsR {
+        width: 85vw;
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .DiggyTroopStatsL {
+        width: 90vw;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .DiggyTroopStatsColumn {
+        width: 100%;
+    }
 }

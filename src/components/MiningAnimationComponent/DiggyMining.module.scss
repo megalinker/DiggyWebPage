@@ -1,0 +1,31 @@
+.DiggyMining {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DiggyMiningAnim {
+    height: 52.5vw;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.AboutText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    min-width: 300px;
+    width: 75vw;
+    font-size: clamp(19px, 1.4vw, 104px);
+    line-height: 1.25;
+    color: black;
+
+    h1 {
+        color: black;
+    }
+
+}
