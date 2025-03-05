@@ -22,11 +22,6 @@ function Footer() {
             {!isSmallScreen && (
                 <div className={styles.MainButtons}>
                     <OrangeButton
-                        text="MINE NOW"
-                        icon={DiggyPlay}
-                        onClick={goMiningPage}
-                    />
-                    <OrangeButton
                         text="BUY $DIGGY"
                         onClick={goICPSwap}
                     />

@@ -39,11 +39,6 @@ function App() {
         </div>
         <div className={styles.MainButtons}>
           <OrangeButton
-            text="MINE NOW"
-            icon={DiggyPlay}
-            onClick={goMiningPage}
-          />
-          <OrangeButton
             text="BUY $DIGGY"
             onClick={goICPSwap}
           />
@@ -75,11 +70,6 @@ function App() {
           <div className={styles.DiggyTroopStatsContent}>
             <DiggyStatsText />
             <div className={styles.SecondButtonRow}>
-              <OrangeButton
-                text="MINE NOW"
-                icon={DiggyPlay}
-                onClick={goMiningPage}
-              />
               <OrangeButton
                 text="BUY $DIGGY"
                 onClick={goICPSwap}

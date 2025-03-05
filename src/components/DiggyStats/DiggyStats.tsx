@@ -109,8 +109,8 @@ const DiggyStats: React.FC = () => {
                 fetchDexscreener,
             ]);
 
-            setVol24(diggystats.volumeUSD1d);
-            setVol7D(diggystats.volumeUSD7d);
+            setVol24(diggystats.volumeUSD);
+            // setVol7D(diggystats.volumeUSD7d);
             setTotalVol(diggystats.totalVolumeUSD);
 
             const priceDiggyUSD = diggystats.priceUSD;
@@ -176,10 +176,13 @@ const DiggyStats: React.FC = () => {
                 <p className={styles.TitleColumn}>VOLUME (24H)</p>
                 <p className={styles.ContentColumn}>$ <AnimatedNumber value={vol24} decimalPlaces={2} /></p>
             </div>
+            {/*             
+            <div className={styles.DiggyStatsColumn}>
             <div className={styles.DiggyStatsColumn}>
                 <p className={styles.TitleColumn}>VOLUME (7D)</p>
                 <p className={styles.ContentColumn}>$ <AnimatedNumber value={vol7D} decimalPlaces={2} /></p>
             </div>
+            */}
             <div className={styles.DiggyStatsColumn}>
                 <p className={styles.TitleColumn}>Total Volume</p>
                 <p className={styles.ContentColumn}>$ <AnimatedNumber value={totalVol} decimalPlaces={2} /></p>
